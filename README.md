@@ -45,6 +45,29 @@ This premium t-shirt features [popup_keyword text="organic cotton" content="100%
 Available in multiple sizes with [popup_keyword text="eco-friendly packaging" content="Shipped in biodegradable packaging made from recycled materials. We're committed to reducing our environmental footprint."].
 ```
 
+## Troubleshooting
+
+### Popup Not Opening
+1. Check browser console for JavaScript errors (F12 -> Console)
+2. Verify the shortcode syntax is correct
+3. Make sure you're testing on a page where the shortcode is present
+4. Enable WordPress debug mode to see additional information
+
+### Debug Mode
+Add this to your `wp-config.php` to enable debug information:
+```php
+define('WP_DEBUG', true);
+```
+
+### Common Issues
+- **Popup appears but closes immediately**: Check for conflicting JavaScript or CSS
+- **Styling issues**: Check for theme CSS conflicts
+- **Not working on specific pages**: The plugin now loads on all pages for compatibility
+
+## Testing
+
+A test HTML file (`test.html`) is included to verify the popup functionality works independently of WordPress.
+
 ## Browser Support
 
 Works on all modern browsers including Chrome, Firefox, Safari, and Edge.
